@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>The Fascinating World of Octopuses</title>
 </head>
 
@@ -17,14 +18,14 @@
     <div id="main-content">
 
         <!-- Introduction -->
-        <h2>Introduction</h2>
+        <h2 class="with-line">INTRODUCTION</h2>
         <p>
             Octopuses are among the most fascinating creatures in the ocean.
             They are known for their intelligence and remarkable adaptability.
         </p>
 
         <!-- Amazing Facts -->
-        <h3>Amazing Facts</h3>
+        <h3>AMAZING FACTS</h3>
         <!-- Unordered list -->
         <ul>
             <li>They have three hearts.</li>
@@ -36,7 +37,7 @@
         <h4>Anatomy</h4>
         <p>
             An octopus's anatomy is as unique as it is fascinating.
-            The <span class="important">mantle</span>, for example, helps in respiration and jet propulsion.
+            The <span style="background-color: #90e0ef";>mantle</span>, for example, helps in respiration and jet propulsion.
         </p>
 
         <!-- Comparison with other Cephalopods -->
@@ -60,16 +61,18 @@
         <div id="quiz-section">
 
             <!-- Image -->
-            <img src="octopus-image.png" alt="Image of an octopus" width="100">
+            <img src="octopus.png" alt="Image of an octopus" width="100">
 
-            <h2>Octopus Quiz</h2>
-            <form action="/submit-quiz" method="POST">
+            <h2>OCTOPUS QUIZ</h2>
+            <form id="quiz" action="/submit-quiz" method="POST">
                 <!-- Question 1 -->
                 <label for="question1">How many hearts does an octopus have?</label>
+                <br>
                 <input type="text" id="question1" name="question1"><br>
 
                 <!-- Question 2 -->
                 <label for="question2">Can octopuses change color? (Yes/No)</label>
+                <br>
                 <input type="text" id="question2" name="question2"><br>
 
                 <input type="submit" value="Submit Quiz">
@@ -80,9 +83,9 @@
 
     <!-- Table -->
     <div id="species-table">
-        <h2>Common Octopus Species</h2>
-        <table border="1">
-            <tr>
+        <h2 class="with-line">Common Octopus Species</h2>
+        <table border="0">
+            <tr style="background-color: #999999;">
                 <th>Species</th>
                 <th>Location</th>
                 <th>Size</th>
@@ -92,7 +95,7 @@
                 <td>Worldwide</td>
                 <td>12-36 inches</td>
             </tr>
-            <tr>
+            <tr style="background-color: white;">
                 <td>Giant Pacific Octopus</td>
                 <td>North Pacific</td>
                 <td>Up to 16 feet</td>
@@ -110,5 +113,4 @@
     </div>
 
 </body>
-
 </html>
