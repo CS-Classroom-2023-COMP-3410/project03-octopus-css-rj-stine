@@ -1,0 +1,208 @@
+body {
+    background-color: #caf0f8;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* had to look up how to do gradient but added that */
+#header {
+    background-image: linear-gradient(to right, #006c96, #00b2d6);
+    color: white;
+/*   creates a curved look to the boxes on the website */
+    border-radius: 15px;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 30px;
+    font-family: 'Stratford Serial', Baskerville;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+
+}
+/* alters <p> in the header to fit in the right spot */
+#header p {
+    text-align: left;
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+#main-content {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+}
+
+/* change font and color of the main headings -- all the same */
+#main-content h2, h3, h4, h5, h6 {
+    font-family: 'Stratford Serial', Baskerville;
+    color: #006994;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+/* allowed me to make each subsequent heading slightly smaller than the last like in example */
+#main-content h3, h4, h5, h6 {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/* altered other elements in the main-content to match example
+change colors and fonts/types */
+#main-content p, ul, ol {
+    font-size: 18px;
+    color: #4d4e8e;
+    line-height: 1.5;
+    font-weight: bold;
+    position: relative;
+    left: 10px;
+    margin-top: 5px; 
+    margin-bottom: 15px;
+}
+
+/* had to use ChatGPT to get this */
+.with-line::after {
+    content: ''; 
+    display: block; 
+    width: 65px;
+    height: 3px;
+    background-color: #95e1f0;
+    margin-top: 5px;
+    margin-left: 0;
+}
+
+/* alter INTRODUCTION font to be the right size without messing with other headers */
+.with-line {
+    font-size: 36px;
+}
+
+/* creates the quiz section to be similar
+changes colors and allows for me to move other elements left, right, etc.*/
+#quiz-section {
+    background-color: #90e0ef;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    width: 1225px; 
+    height: 300px; 
+    position: relative;
+    margin: 20px auto;
+}
+
+#quiz-section h2 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #006994;
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;
+}
+
+/* octopus image, had to move it to be in the right spot */
+#quiz-section img {
+    position: absolute;
+    bottom: 20px;
+    right: 83%; 
+    bottom: 20%;
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    border: 5px solid #8200e6; /* Add purple border */
+}
+
+#quiz-section form {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: right;
+}
+
+#quiz-section label {
+    display: block;
+    color: #4d4e8e;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+/* the white boxes and submit button for quiz section
+ used flots so that i could line it up properly with the questions*/
+#quiz-section input[type="text"] {
+    /* creates text boxes */
+    width: 380px; 
+    height: 35px;
+    padding: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    /* add border box to text boxes */
+    box-sizing: border-box;
+    width: 380px;
+    height: 35px;
+    padding: 5px;
+    border: 2px solid #16769d;
+    float: left;    
+}
+
+#quiz-section input[type="submit"] {
+    background-color: #0077b6;
+    border: none;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    float: left;
+}
+
+/* gave me the most trouble
+had to alter colors to be specific but used inline CSS for some of the boxes
+really just altering colors and positions*/
+#species-table table{
+    width: 97%;
+    border-collapse: collapse;
+    margin: 20px
+}
+
+#species-table th {
+    color: white;
+    font-size: 20px;
+    text-align: left; 
+    padding: 15px;
+    border: 3px solid black ;
+}
+
+#species-table td {
+    color: #4d4e8e;
+    font-size: 20px;
+    text-align: left; 
+    font-weight: bold;
+    padding: 15px;
+    border: 3px solid black;
+}
+
+#species-table h2{
+    color: #006994;
+    font-weight: bold;
+    font-size: 36px;
+    font-family: 'Stratford Serial', Baskerville;
+    margin: 20px;
+    padding-left: 15px;
+
+}
+
+#footer {
+    background-color: #006994;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+    margin: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+
